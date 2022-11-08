@@ -1,1 +1,4 @@
 node_modules
+package-lock.json
+
+# This is where you would store any file you don't want to got ot the remote (won't Push)

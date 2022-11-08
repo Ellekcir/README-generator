@@ -36,7 +36,7 @@ const questions = [
     {
         type: "input",
         name: "usage",
-        message: "What is this project usage for?"
+        message: "What command should be used to get started with the prompts?"
     },
     {
         type: "list",
@@ -53,11 +53,6 @@ const questions = [
         type: "input",
         name: "contributing",
         message: "Who are the contributors of this projects?"
-    },
-    {
-        type: "input",
-        name: "questions",
-        message: "What do I do if I have questions? "
     },
     {
         type: "input",

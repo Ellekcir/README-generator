@@ -1,9 +1,8 @@
-# Bear
+# Node.js README Generator
   ![node.js badge](https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white)
-  
-   
+  ![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)
   ## Description
-  f
+  (Brief description here)
   
   ## Table of Contents
   - [Description](#description)
@@ -20,36 +19,32 @@
       
   - npm install inquirer
       
-  - f
-  ```
+  - npm i
+  ``` 
   ## Usage
-  f
-      
   Run the following command in your command line and follow the prompts:
+  ``` 
+ node index
   ```
-  node index.js
-  ```
+
   ## Tests
-      
   Run the following command in your command line and follow the prompts:
-      
-  ff
-      
+  ``` 
+  npm run test
+  ```
+
   ## Contributing 
-  
-      
-  ![How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+  Rickelle 
       
   ## License 
-  MIT 
+  Mozilla Public License 2.0 
   
   For further details please use the provided link:
-  
+
+  ![Link: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)(https://opensource.org/licenses/MPL-2.0)
   
   ## Questions
-  ff
-      
   For further questions please contact me on : 
-  [@Email](mailto:f),
-  [GitHub](f)
+  * [@Email](mailto:rickelle@gmail.com)
+  * [GitHub](Ellekcir)
   

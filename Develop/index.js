@@ -4,12 +4,11 @@
 
 // npm init -y
 // npm i inquirer@8.2.4
-// const fs = require('fs');
-// const iquirier = require('inquirer)
+
 const fs = require("fs");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown.js");
-// const filename = require("./node.js-README-generator/README.md")
+
 // TODO: Create an array of questions for user input
 //with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 const questions = [
@@ -44,9 +43,9 @@ const questions = [
         message: "Choose your license for this project: ",
         choices: [
             "MIT",
-            "Apach license 2.0",
+            "Apache license 2.0",
             "Mozilla Public License 2.0",
-            "GNU General Public License (GPL)",
+            "GNU General Public License v3.0",
         ]
     },
     {
@@ -57,12 +56,12 @@ const questions = [
     {
         type: "input",
         name: "username",
-        message: "What is your GitHub username: "
+        message: "Please enter your GitHub username: "
     },
     {
         type: "input",
         name: "email",
-        message: "What is your email: "
+        message: "Please enter your email address: "
     }
 ]
 
@@ -71,13 +70,12 @@ const questions = [
 // TODO: Create a function to initialize app
 function init() {
     inquirer
-        .prompt(questions)
-        .then((data) => {
+        .prompt(questions).then((data) => {
             console.log(data);
 
             // TODO: Create a function to write README file  
             fs.writeFile('README.md', generateMarkdown(data), (err) =>
-                err ? console.log(err) : console.log('Generating README!')
+                err ? console.log(err) : console.log('...Generating README!')
             );
         });
     };

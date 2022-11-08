@@ -45,13 +45,15 @@ function rendersLicenseBadge(license) {
   const generateMarkdown = (data) => {
     return `# ${data.title}
   ![node.js badge](https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white)
+  
   ${rendersLicenseBadge(data.license)}
   ## Description
   ${data.description}
   
-  Please see below for demo:
-  [Video Demo of README Generator](./Develop/assets/videoDemo.webm)
-
+  Please see below for demo and screenshots of generated README:
+  ![Video Demo of README Generator](./Develop/assets/videoDemo.webm)
+  ![Screenshot of Generated README Demo](./Develop/assets/readme-preview.jpg)
+  ![Screenshot of Generated README Demo](./Develop/assets/readme-preview2.jpg)
 
   ## Table of Contents
   - [Description](#description)

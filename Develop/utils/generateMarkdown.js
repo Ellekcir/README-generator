@@ -8,7 +8,7 @@ function rendersLicenseBadge(license) {
         case "GNU General Public License v3.0":
             return "![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)";
         case "MIT License":
-            return "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)";
+            return "![License: MIT]https://img.shields.io/badge/License-MIT-yellow.svg)(https://opensource.org/licenses/MIT)";
         case "Mozilla Public License 2.0":
             return "![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)";
         default:
@@ -40,14 +40,14 @@ function renderLicenseLink(license) {
 //   if license
 // }
 // ![node.js badge](https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white)
-    
+
 
 
 // TODO: Create a function to generate markdown for README
 
 const generateMarkdown = (data) => {
     return `# ${data.title}
-
+    ![node.js badge](https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white)
     ${rendersLicenseBadge(data.license)}
  
     ## Description
@@ -64,11 +64,11 @@ const generateMarkdown = (data) => {
     ## Installation
     Please open Command Line and run the following command/s if needed:
     \`\`\`
-     npm init
+    - npm init
     
-   npm install inquirer
+     - npm install inquirer
     
-    ${data.installation}
+    - ${data.installation}
     \`\`\`
     ## Usage
     ${data.usage}
@@ -80,9 +80,9 @@ const generateMarkdown = (data) => {
     ## Tests
     
     Run the following command in your command line and follow the prompts:
-    \`\`\`
+    
     ${data.test}
-    \`\`\`
+    
     ## Contributing 
     ${data.contributing}
     
@@ -91,15 +91,15 @@ const generateMarkdown = (data) => {
     ## License 
     ${data.license} 
 
-    For further deatails please use the provided link:
+    For further details please use the provided link:
     ${renderLicenseLink(data.license)}
 
     ## Questions
     ${data.questions}
     
     For further questions please contact me on : 
- ![@Email](mailto:${data.email}),
- ![GitHub](${data.username})
+ [@Email](mailto:${data.email}),
+ [GitHub](${data.username})
 `;
 
 };
